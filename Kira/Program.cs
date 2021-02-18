@@ -28,7 +28,7 @@ namespace Kira_Tool
             _client.Ready += ReadyAsync;
             _client.StartAsync();
             Task.Delay(-1);
-            Console.ReadKey();
+            Console.ReadLine();
         }
 
         private static Task _client_Log(LogMessage arg)
@@ -51,14 +51,11 @@ namespace Kira_Tool
             if (up == "1")
             {
                 Console.Clear();
-                Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
+                Console.WriteAscii("Discord Kira-Tool V.1 | DMALL", System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
-                Console.WriteLine("[1] DMALL");
-                Console.ReadKey();
-
-                Console.Write("DMALL Message : ");
+                Console.Write("Veuillez saisir le message que vous voulez envoyer : ");
 
                 string message = Console.ReadLine();
 
@@ -69,7 +66,6 @@ namespace Kira_Tool
                         try
                         {
                             await user.SendMessageAsync(message);
-
                         }
                         catch (Exception)
                         {
@@ -79,7 +75,14 @@ namespace Kira_Tool
                     }
                     await Program.ReadyAsync();
                 }
+
+                if (up == "2")
+                {
+                    Console.WriteLine("testing");
+                    Console.ReadLine();
+                }
             }
+            Console.ReadLine();
         }
     }
 }
