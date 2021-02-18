@@ -82,7 +82,6 @@ namespace Kira_Tool
                     Console.ReadLine();
                 }
             }
-            Console.ReadLine();
         }
     }
 }
