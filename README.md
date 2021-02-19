@@ -4,8 +4,7 @@
 
 ## 🍙 Discord Tool C#
 
-Très rapide et pérformant avec une assez bonne optimisation pour soulager votre ram. 
-Selon nous Discord Tool est l'un des meilleurs choix possible de selfbot/bot sur Discord 🍬 
+:')()()()
 
 ### 💡 Installation 
 
