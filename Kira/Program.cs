@@ -25,64 +25,49 @@ namespace Kira_Tool
             _client = new DiscordSocketClient();
             _client.Log += _client_Log;
             _client.LoginAsync(TokenType.Bot, user);
-            _client.Ready += ReadyAsync;
+            _client.Ready += ReadyApp;
             _client.StartAsync();
-            Task.Delay(-1);
-            Console.ReadLine();
+            Task.Delay(-1).Wait();
         }
 
         private static Task _client_Log(LogMessage arg)
         {
             Console.WriteLine(Environment.NewLine + arg, System.Drawing.Color.DarkCyan);
+            Console.Clear();
             return Task.CompletedTask;
         }
 
-        private async static Task ReadyAsync()
+        private async static Task<Task> ReadyApp()
         {
             Console.Clear();
             Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
             Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
             Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
             Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
-            Console.WriteLine("[1] DMALL");
+            Console.WriteLine("[1] Twitch Presence");
 
             string up = Console.ReadLine();
 
             if (up == "1")
             {
                 Console.Clear();
-                Console.WriteAscii("Discord Kira-Tool V.1 | DMALL", System.Drawing.Color.DeepPink);
+                Console.Title = "Discord Kira-Tool | Twitch Presence";
+                Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
-                Console.Write("Veuillez saisir le message que vous voulez envoyer : ");
+                Console.WriteLine("Veuillez saisir le message de votre présence :" + Environment.NewLine);
+                string rpc = Console.ReadLine();
+                Console.WriteLine(Environment.NewLine + "Veuillez saisir votre lien twitch :" + Environment.NewLine);
+                string link = Console.ReadLine();
 
-                string message = Console.ReadLine();
+                await _client.SetGameAsync(rpc, link, ActivityType.Streaming);
 
-                foreach (SocketGuild guild in _client.Guilds)
-                {
-                    foreach (SocketUser user in guild.Users)
-                    {
-                        try
-                        {
-                            await user.SendMessageAsync(message);
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine("Cannot send : 1 : message");
-                        }
+                await Program.ReadyApp();
 
-                    }
-                    await Program.ReadyAsync();
-                }
 
-                if (up == "2")
-                {
-                    Console.WriteLine("testing");
-                    Console.ReadLine();
-                }
             }
-            Console.ReadLine();
+            return Task.CompletedTask;
         }
     }
 }
