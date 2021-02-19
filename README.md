@@ -12,7 +12,7 @@ Rien de très compliqué. Il vous suffit d'installer le .exe et de l'éxécuter 
 
 #### 📢 Qu'est ce qu'un token et comment le récupérer ?
 
-Un token (jeton) et l'id de connexion de votre compte. C'est celui que utilise l'api pour connecté un utilisateur sur son compte par exemple !
+2021 et tu demandes encore comment récup un token discord?!!
 
 ❓ **Comment le récupérer ?** ❓
 
