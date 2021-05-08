@@ -43,7 +43,7 @@ namespace Kira_Tool
             Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
             Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
             Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-            Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+            Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
             Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
             Console.WriteLine("[1] Twitch Presence   #####   [2] Playing Presence   ####   [3] Watching Presence   ####   [4] Listening Presence" + Environment.NewLine, System.Drawing.Color.HotPink);
             Console.WriteLine("[5] Envoyer un message   #####   [6] Envoyer un embed   ####   [7] Bannir un utilisateur   ####   [8] Débannir un utilisateur" + Environment.NewLine, System.Drawing.Color.HotPink);
