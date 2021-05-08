@@ -19,7 +19,7 @@ namespace Kira_Tool
             Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
             Console.WriteLine("By Seryû : https://github.com/Seryu-Ub", System.Drawing.Color.MediumPurple);
             Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-            Console.WriteLine(Environment.NewLine + "Veuillez saisir votre token [BOT / USER]" + Environment.NewLine, System.Drawing.Color.HotPink);
+            Console.WriteLine(Environment.NewLine + "Veuillez saisir votre token [BOT] (Bientôt une version User)" + Environment.NewLine, System.Drawing.Color.HotPink);
 
             user = Console.ReadLine();
             _client = new DiscordSocketClient();
@@ -58,7 +58,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Si vous voulez supprimer votre présence il suffit de ne rien écrire et de presser \"Entrée\"" + Environment.NewLine, System.Drawing.Color.Cyan);
                 Console.WriteLine("Veuillez saisir le message de votre présence :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -82,7 +82,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Si vous voulez supprimer votre présence il suffit de ne rien écrire et de presser \"Entrée\"" + Environment.NewLine, System.Drawing.Color.Cyan);
                 Console.WriteLine("Veuillez saisir le message de votre présence :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -104,7 +104,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Si vous voulez supprimer votre présence il suffit de ne rien écrire et de presser \"Entrée\"" + Environment.NewLine, System.Drawing.Color.Cyan);
                 Console.WriteLine("Veuillez saisir le message de votre présence :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -126,7 +126,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Si vous voulez supprimer votre présence il suffit de ne rien écrire et de presser \"Entrée\"" + Environment.NewLine, System.Drawing.Color.Cyan);
                 Console.WriteLine("Veuillez saisir le message de votre présence :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -148,9 +148,9 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Veuillez saisir votre message à envoyer :" + Environment.NewLine, System.Drawing.Color.Cyan); 
+                Console.WriteLine("Veuillez saisir votre message à envoyer :" + Environment.NewLine, System.Drawing.Color.Cyan);
                 string message = "";
                 message = Console.ReadLine();
                 Console.WriteLine(Environment.NewLine + "Veuillez saisir l'id du channel où envoyer le message :" + Environment.NewLine);
@@ -173,7 +173,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Veuillez saisir l'id du channel où envoyer le message :" + Environment.NewLine, System.Drawing.Color.Cyan);
                 ulong channel = ulong.Parse(Console.ReadLine());
@@ -241,7 +241,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
                 Console.WriteLine(Environment.NewLine + "[Vous (ou votre bot) devez avoir la permission de gerer les bannissements]" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Veuillez saisir l'id du serveur ou ce trouve la personne que vous voulez bannir :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -259,12 +259,10 @@ namespace Kira_Tool
                     }
                     catch (Exception)
                     {
-
-
+                        Console.WriteLine(Environment.NewLine + "Une erreur est survenue. Nous allons vous remettre sur la page principale.", System.Drawing.Color.Red);
+                        await Task.Delay(4000);
+                        return await Program.ReadyApp();
                     }
-
-
-
                 }
 
                 Console.WriteLine(Environment.NewLine + "L'utilisateur a bien été banni !" + Environment.NewLine, System.Drawing.Color.MediumPurple);
@@ -281,7 +279,7 @@ namespace Kira_Tool
                 Console.WriteAscii("Discord Kira-Tool V.1", System.Drawing.Color.DeepPink);
                 Console.WriteLine("By Seryû : https://github.com/Seryu-Ub" + Environment.NewLine, System.Drawing.Color.DeepPink);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
-                Console.WriteLine("Connecté sur l'utilisateur :" + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
+                Console.WriteLine("Connecté sur l'utilisateur : " + _client.CurrentUser.Username + "#" + _client.CurrentUser.Discriminator, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("--------------------------------------", System.Drawing.Color.MediumPurple);
                 Console.WriteLine(Environment.NewLine + "[Vous (ou votre bot) devez avoir la permission de gerer les bannissements]" + Environment.NewLine, System.Drawing.Color.MediumPurple);
                 Console.WriteLine("Veuillez saisir l'id du serveur ou ce trouve la personne que vous voulez débannir :" + Environment.NewLine, System.Drawing.Color.Cyan);
@@ -299,12 +297,10 @@ namespace Kira_Tool
                     }
                     catch (Exception)
                     {
-
-
+                        Console.WriteLine(Environment.NewLine + "Une erreur est survenue. Nous allons vous remettre sur la page principale.", System.Drawing.Color.Red);
+                        await Task.Delay(4000);
+                        return await Program.ReadyApp();
                     }
-
-
-
                 }
 
                 Console.WriteLine(Environment.NewLine + "L'utilisateur a bien été débanni !" + Environment.NewLine, System.Drawing.Color.MediumPurple);
