@@ -1,6 +1,7 @@
 # 💭 Kira-Tool
 
 ✨ Un tool gratuit et facile d'utilisation ! ✨
+(C'est pas fini la suite arrivera plus tard quand je n'aurai pas la flemme... De plus je compte le faire en WPF)
 
 ## 🍙 Discord Tool C#
 
